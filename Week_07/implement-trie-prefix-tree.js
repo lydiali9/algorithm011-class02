@@ -1,5 +1,3 @@
-学习笔记
-
 /**
  * Initialize your data structure here.
  */
@@ -34,7 +32,7 @@ Trie.prototype.insert = function(word) {
         node[ch] = node[ch] || {};
         node = node[ch];
     }
-    node[this.endOfWord] = this.endOfWord;
+    node[trie.endOfWord] = trie.endOfWord;
 };
 
 /**
@@ -48,8 +46,7 @@ Trie.prototype.search = function(word) {
         if(!node[ch]) return false;
         node = node[ch];
     }
-
-    return node[this.endOfWord] === this.endOfWord;
+    return node[trie.endOfWord] === trie.endOfWord;
 };
 
 /**
