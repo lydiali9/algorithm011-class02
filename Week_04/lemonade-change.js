@@ -29,7 +29,7 @@ var lemonadeChange = function(bills) {
         if (bills[i] == 20) {
             if (fiveCount > 0 && tenCount > 0) {
                 fiveCount--;
-                tenCount--
+                tenCount--;
                 twentyCount++;
             } else if (fiveCount >= 3) {
                 fiveCount -= 3;
